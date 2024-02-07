@@ -1,0 +1,28 @@
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{@{\extracolsep{0.1cm}}l*{4}{c}} \toprule
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+\midrule
+Treatment ($\beta$)&       4.376&       4.300&       8.011&       8.859\\
+            &     (0.791)&     (0.784)&     (1.706)&     (1.727)\\
+\addlinespace
+Treatment*Baseline Belief about Others ($\gamma$)&            &            &      -0.209&      -0.257\\
+            &            &            &    (0.0874)&    (0.0894)\\
+\addlinespace
+Constant    &       15.12&       7.340&       5.126&       6.618\\
+            &     (1.786)&     (2.269)&     (2.452)&     (3.562)\\
+\midrule
+Inference Robustness ($\beta$)&            &            &            &            \\
+\qquad \emph{p}-value: Robust S.E.&       0.000&       0.000&       0.000&       0.000\\
+\qquad \emph{p}-value: Wild Bootstrap&       0.000&       0.003&       0.000&       0.000\\
+\qquad \emph{p}-value: Permutation Test&       0.000&       0.000&       0.000&       0.000\\
+\midrule Inference Robustness ($\gamma$)&            &            &            &            \\
+\qquad \emph{p}-value: Robust S.E.&            &            &       0.017&       0.004\\
+\qquad \emph{p}-value: Wild Bootstrap&            &            &       0.038&       0.015\\
+\qquad \emph{p}-value: Permutation Test&            &            &       0.020&       0.004\\
+\midrule Session F.E&  \checkmark&  \checkmark&  \checkmark&  \checkmark\\
+Baseline beliefs&            &  \checkmark&  \checkmark&  \checkmark\\
+Controls    &            &            &            &  \checkmark\\
+$N$         &         381&         381&         381&         375\\
+$R^2$       &       0.123&       0.200&       0.212&       0.247\\
+\bottomrule
+\end{tabular}

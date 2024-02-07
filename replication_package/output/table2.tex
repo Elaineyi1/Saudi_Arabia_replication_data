@@ -1,0 +1,21 @@
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{@{\extracolsep{0.1cm}}l*{4}{c}} \toprule
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+\midrule
+Treatment ($\beta$)&      0.0853&      0.0876&      0.0899&      0.0898\\
+            &    (0.0399)&    (0.0399)&    (0.0395)&    (0.0404)\\
+\addlinespace
+Constant    &       0.235&       0.132&      -0.156&      -0.131\\
+            &    (0.0270)&    (0.0739)&    (0.0970)&     (0.186)\\
+\midrule
+Inference Robustness ($\beta$)&            &            &            &            \\
+\qquad \emph{p}-value: Robust S.E.&       0.033&       0.028&       0.023&       0.027\\
+\qquad \emph{p}-value: Wild Bootstrap&       0.018&       0.013&       0.013&       0.008\\
+\qquad \emph{p}-value: Permutation Test&       0.036&       0.038&       0.024&       0.025\\
+\midrule Session F.E.&            &  \checkmark&  \checkmark&  \checkmark\\
+Baseline beliefs&            &            &  \checkmark&  \checkmark\\
+Controls    &            &            &            &  \checkmark\\
+$N$         &         500&         500&         500&         491\\
+$R^2$       &     0.00907&      0.0696&       0.108&       0.116\\
+\bottomrule
+\end{tabular}

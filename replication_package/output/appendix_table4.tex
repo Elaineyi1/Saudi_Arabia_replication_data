@@ -1,0 +1,48 @@
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{@{\extracolsep{0.1cm}}l*{6}{c}} \toprule
+& K-L-K Index & Employed & Applied & Interviewed & Driving & Beliefs about \\
+& & & & & Lessons & Neighbors \\ \midrule
+\multicolumn{6}{@{}l}{\textbf{Panel A}: Wedge $\le 0$} \\
+\midrule
+Treatment ($\beta$)&       0.261&     0.00357&       0.125&      0.0438&       0.108&       0.142\\
+            &    (0.0609)&    (0.0331)&    (0.0388)&    (0.0221)&    (0.0524)&    (0.0314)\\
+\addlinespace
+Constant    &      -0.124&      0.0828&      0.0621&      0.0138&       0.676&       0.401\\
+            &    (0.0334)&    (0.0230)&    (0.0201)&   (0.00972)&    (0.0390)&    (0.0223)\\
+\midrule
+Inference Robustness ($\beta$)&            &            &            &            &            &            \\
+\qquad \emph{p}-value: Robust S.E.&       0.000&       0.914&       0.001&       0.048&       0.040&       0.000\\
+\qquad \emph{p}-value: Wild Bootstrap&       0.000&       0.918&       0.027&       0.037&       0.056&       0.002\\
+\qquad \emph{p}-value: Permutation Test&       0.000&       1.000&       0.002&       0.039&       0.044&       0.000\\
+\qquad \emph{p}-value: L-S-X MHT Correction&          --&       0.904&       0.006&       0.111&       0.117&       0.000\\
+\midrule Lee Attrition Bounds&            &            &            &            &            &            \\
+\qquad Lower Bound:&       0.252&      -0.005&       0.122&       0.043&       0.089&       0.136\\
+\qquad      &    (0.0704)&    (0.0339)&    (0.0386)&    (0.0218)&    (0.0656)&    (0.0395)\\
+\addlinespace \qquad Upper Bound:&       0.290&       0.024&       0.151&       0.057&       0.118&       0.152\\
+\qquad      &    (0.0715)&    (0.0623)&    (0.0664)&    (0.0196)&    (0.0567)&    (0.0476)\\
+\midrule $N$&         284&         284&         284&         284&         284&         284\\
+$R^2$       &      0.0623&   0.0000412&      0.0361&      0.0141&      0.0148&      0.0680\\
+\bottomrule
+\noalign{\vskip 2mm} 
+\multicolumn{6}{@{}l}{\textbf{Panel B}: Wedge $>0$} \\
+\midrule
+Treatment ($\beta$)&       0.214&      0.0709&      0.0517&      0.0577&       0.134&      0.0673\\
+            &    (0.0791)&    (0.0545)&    (0.0517)&    (0.0327)&    (0.0978)&    (0.0458)\\
+\addlinespace
+Constant    &      -0.104&      0.0444&      0.0444&    3.12e-17&       0.578&       0.562\\
+            &    (0.0405)&    (0.0310)&    (0.0310)&  (1.57e-09)&    (0.0744)&    (0.0352)\\
+\midrule
+Inference Robustness ($\beta$)&            &            &            &            &            &            \\
+\qquad \emph{p}-value: Robust S.E.&       0.008&       0.196&       0.320&       0.081&       0.175&       0.145\\
+\qquad \emph{p}-value: Wild Bootstrap&       0.028&       0.267&       0.415&       0.204&       0.169&       0.215\\
+\qquad \emph{p}-value: Permutation Test&       0.008&       0.288&       0.460&       0.258&       0.232&       0.136\\
+\qquad \emph{p}-value: L-S-X MHT Correction&          --&       0.346&       0.323&       0.486&       0.436&       0.498\\
+\midrule Lee Attrition Bounds&            &            &            &            &            &            \\
+\qquad Lower Bound:&       0.199&       0.061&       0.043&       0.050&       0.106&       0.043\\
+\qquad      &    (0.0889)&    (0.0980)&    (0.0980)&    (0.0930)&    (0.1022)&    (0.0575)\\
+\addlinespace \qquad Upper Bound:&       0.235&       0.067&       0.049&       0.056&       0.111&       0.081\\
+\qquad      &    (0.0930)&    (0.0541)&    (0.0511)&    (0.0318)&    (0.1167)&    (0.0635)\\
+\midrule $N$&          97&          97&          97&          97&          97&          97\\
+$R^2$       &      0.0665&      0.0165&     0.00993&      0.0276&      0.0195&      0.0225\\
+\bottomrule
+\end{tabular}

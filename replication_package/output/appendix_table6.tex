@@ -1,0 +1,36 @@
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{@{\extracolsep{0.1cm}}l*{6}{c}} \toprule
+& K-L-K Index & Employed & Applied & Interviewed & Driving & Beliefs about \\
+& & & & & Lessons & Neighbors \\ \midrule
+\multicolumn{7}{@{}l}{\textbf{Panel A}: Baseline beliefs and confidence} \\
+\midrule
+Update ($-$Wedge$*\mathds{1}_{Treatment}$;$\beta$)&      0.0191&    -0.00227&     0.00917&     0.00235&     0.00812&      0.0103\\
+            &   (0.00590)&   (0.00241)&   (0.00288)&   (0.00152)&   (0.00387)&   (0.00209)\\
+\addlinespace
+Constant    &      -0.204&       0.103&      0.0905&      0.0475&       0.590&       0.222\\
+            &    (0.0967)&    (0.0565)&    (0.0692)&    (0.0358)&     (0.106)&    (0.0561)\\
+\midrule
+Inference Robustness ($\beta$)&            &            &            &            &            &            \\
+\qquad \emph{p}-value: Robust S.E.&       0.001&       0.347&       0.002&       0.123&       0.036&       0.000\\
+\qquad \emph{p}-value: Wild Bootstrap&       0.000&       0.483&       0.057&       0.114&       0.001&       0.000\\
+\qquad \emph{p}-value: Permutation Test&       0.003&       0.377&       0.002&       0.139&       0.047&       0.000\\
+\midrule $N$&         381&         381&         381&         381&         381&         381\\
+$R^2$       &      0.0531&     0.00428&      0.0398&      0.0286&      0.0140&       0.127\\
+\bottomrule
+\noalign{\vskip 2mm} 
+\multicolumn{7}{@{}l}{\textbf{Panel B}: Baseline beliefs, confidence, session fixed effects and demographic controls} \\
+\midrule
+Update ($-$Wedge$*\mathds{1}_{Treatment}$;$\beta$)&      0.0207&    -0.00242&     0.00943&     0.00248&     0.00842&      0.0118\\
+            &   (0.00598)&   (0.00262)&   (0.00304)&   (0.00146)&   (0.00401)&   (0.00221)\\
+\addlinespace
+Constant    &      -0.272&       0.153&     -0.0982&      0.0444&       0.617&       0.213\\
+            &     (0.193)&     (0.129)&     (0.143)&    (0.0726)&     (0.219)&     (0.118)\\
+\midrule
+Inference Robustness ($\beta$)&            &            &            &            &            &            \\
+\qquad \emph{p}-value: Robust S.E.&       0.001&       0.357&       0.002&       0.089&       0.036&       0.000\\
+\qquad \emph{p}-value: Wild Bootstrap&       0.000&       0.486&       0.053&       0.109&       0.020&       0.000\\
+\qquad \emph{p}-value: Permutation Test&       0.000&       0.364&       0.006&       0.125&       0.040&       0.000\\
+\midrule $N$&         375&         375&         375&         375&         375&         375\\
+$R^2$       &       0.143&      0.0905&       0.157&      0.0902&       0.112&       0.213\\
+\bottomrule
+\end{tabular}
